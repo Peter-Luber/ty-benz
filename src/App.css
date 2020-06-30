@@ -61,15 +61,21 @@ body {
 @keyframes Logo-pulse {
   from {
     transform: scale(0.9);
-    filter: drop-shadow(2px 6px 5px #444444);
+    filter: drop-shadow(2px 6px 3px #444444);
+    -webkit-filter: drop-shadow(2px 6px 3px #444444);
+    -moz-filter: drop-shadow(2px 6px 3px #444444);
   }
   50% {
     transform: scale(1);
-    filter: drop-shadow(2px 6px 7px #444444);
+    filter: drop-shadow(2px 6px 5px #444444);
+    -webkit-filter: drop-shadow(2px 6px 5px #444444);
+    -moz-filter: drop-shadow(2px 6px 5px #444444);
   }
   to {
     transform: scale(0.9);
-    filter: drop-shadow(2px 6px 5px #444444);
+    filter: drop-shadow(2px 6px 3px #444444);
+    -webkit-filter: drop-shadow(2px 6px 3px #444444);
+    -moz-filter: drop-shadow(2px 6px 3px #444444);
   }
 }
 
