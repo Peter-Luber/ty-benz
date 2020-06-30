@@ -6,7 +6,6 @@ body {
 
 .App {
   text-align: center;
-  
 }
 
 .Ats-logo {
@@ -40,6 +39,11 @@ body {
 @media only screen and (min-width: 781px) {
   .App-logo {
     height: 120px;
+  }
+
+  .Media-wrapper {
+    overflow: scroll;
+    position: fixed;
   }
 }
 
@@ -84,8 +88,6 @@ body {
   height: 100%;
   display: block;
   margin: auto;
-  overflow: scroll;
-  position: fixed;
 }
 
 .Media-container {
