@@ -9,11 +9,35 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="Header-box">
-          <img src={tblogo} className="App-logo" alt="Ty Benz logo" />
-          <p>
-            Tyler Benz, Director/Producer/Co-Founder - All The Smoke Pictures
-          </p>
-          <img src={atslogo} className="Ats-logo" alt="All The Smoke logo" />
+          <div>
+            <img src={tblogo} className="App-logo" alt="Ty Benz logo" />
+          </div>
+          <div>
+            <p>
+              Tyler Benz, Director/Producer/Co-Founder - All The Smoke Pictures
+              <br></br>
+              <text>Inquiries: </text>
+              <a href="mailto:tyler@allthesmokepictures.com">
+                tyler@allthesmokepictures.com
+              </a>
+              <br></br>
+              <text>Instagram: </text>
+              <a href="https://www.instagram.com/tylerbenz/">@tylerbenz</a>
+              <text> - </text>
+              <a href="https://www.instagram.com/allthesmokepictures/">
+                @allthesmokepictures
+              </a>
+            </p>
+          </div>
+          <div className="Ats-logo-box">
+            <a href="https://www.instagram.com/allthesmokepictures/">
+              <img
+                src={atslogo}
+                className="Ats-logo"
+                alt="All The Smoke logo"
+              />
+            </a>
+          </div>
         </div>
       </header>
       <div className="Media-wrapper">

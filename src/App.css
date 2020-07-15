@@ -1,23 +1,19 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(240, 240, 240);
 }
 
 .App {
   text-align: center;
 }
 
-.Ats-logo {
-  height: 80px;
+.Ats-logo-box {
   z-index: 1;
-  filter: drop-shadow(2px 6px 4px #444444);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: Logo-pulse infinite 3s ease-in-out;
-  }
+.Ats-logo {
+  height: 80px;
+  filter: drop-shadow(2px 6px 4px #696969);
 }
 
 .App-header {
@@ -49,7 +45,7 @@ body {
 
 @media only screen and (max-width: 780px) {
   .App-header {
-    height: 420px;
+    height: 450px;
   }
 
   .Header-box {
@@ -62,24 +58,57 @@ body {
   }
 }
 
+@media only screen and (min-width: 781px) and (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: Logo-pulse-small infinite 3s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 781px) and (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: Logo-pulse infinite 3s ease-in-out;
+  }
+}
+
 @keyframes Logo-pulse {
   from {
     transform: scale(0.9);
-    filter: drop-shadow(2px 6px 3px #444444);
-    -webkit-filter: drop-shadow(2px 6px 3px #444444);
-    -moz-filter: drop-shadow(2px 6px 3px #444444);
+    filter: drop-shadow(2px 6px 4px #696969);
+    -webkit-filter: drop-shadow(2px 6px 4px #696969);
+    -moz-filter: drop-shadow(2px 6px 4px #696969);
   }
   50% {
     transform: scale(1);
-    filter: drop-shadow(2px 6px 5px #444444);
-    -webkit-filter: drop-shadow(2px 6px 5px #444444);
-    -moz-filter: drop-shadow(2px 6px 5px #444444);
+    filter: drop-shadow(2px 6px 8px #696969);
+    -webkit-filter: drop-shadow(2px 6px 8px #696969);
+    -moz-filter: drop-shadow(2px 6px 8px #696969);
   }
   to {
     transform: scale(0.9);
-    filter: drop-shadow(2px 6px 3px #444444);
-    -webkit-filter: drop-shadow(2px 6px 3px #444444);
-    -moz-filter: drop-shadow(2px 6px 3px #444444);
+    filter: drop-shadow(2px 6px 4px #696969);
+    -webkit-filter: drop-shadow(2px 6px 4px #696969);
+    -moz-filter: drop-shadow(2px 6px 4px #696969);
+  }
+}
+
+@keyframes Logo-pulse-small {
+  from {
+    transform: scale(0.9);
+    filter: drop-shadow(2px 6px 2.5px #696969);
+    -webkit-filter: drop-shadow(2px 6px 2.5px #696969);
+    -moz-filter: drop-shadow(2px 6px 2.5px #696969);
+  }
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(2px 6px 4px #696969);
+    -webkit-filter: drop-shadow(2px 6px 4px #696969);
+    -moz-filter: drop-shadow(2px 6px 4px #696969);
+  }
+  to {
+    transform: scale(0.9);
+    filter: drop-shadow(2px 6px 2.5px #696969);
+    -webkit-filter: drop-shadow(2px 6px 2.5px #696969);
+    -moz-filter: drop-shadow(2px 6px 2.5px #696969);
   }
 }
 
